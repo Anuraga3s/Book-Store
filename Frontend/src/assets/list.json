@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":"This is book number 1.",
+        "price":0,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2020/01/30/17/49/book-4806076_1280.jpg"
+    },
+     {
+        "id":2,
+        "name":"Story Book",
+        "title":"This is book number 2.",
+        "price":0,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2020/01/30/17/49/book-4806076_1280.jpg"
+    },
+     {
+        "id":3,
+        "name":"Story Book",
+        "title":"This is book number 3.",
+        "price":0,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2020/01/30/17/49/book-4806076_1280.jpg"
+    },
+     {
+        "id":4,
+        "name":"Story Book",
+        "title":"This is book number 4.",
+        "price":0,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2020/01/30/17/49/book-4806076_1280.jpg"
+    },
+     {
+        "id":5,
+        "name":"Story Book",
+        "title":"This is book number 5.",
+        "price":0,
+        "category":"Free",
+        "image":"https://cdn.pixabay.com/photo/2020/01/30/17/49/book-4806076_1280.jpg"
+    }
+]
