@@ -1,6 +1,5 @@
 import React from "react";
-import banner from "../assets/banner.jpg";  
-
+import banner from "../assets/banner.jpg";
 function Banner() {
   return (
     <>
@@ -11,10 +10,9 @@ function Banner() {
               Hello, welcome here to learn something{" "}
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
-            <p className="text-sm md:text-xl">
-             At BookShelf, we cater to every kind of reader — whether you're curling up with a novel or 
-             diving into the complexities of thermodynamics. With a wide selection of books for engineers, 
-             students, and general readers, this is your one-stop destination for quality reads.
+            <p className="text-sm md:text-xl">At BookShelf, we believe in the magic of books. Whether you're looking for
+  timeless classics, gripping thrillers, or insightful self-help guides,
+  we’re here to connect readers with stories that matter.
             </p>
             <label className="input input-bordered flex items-center gap-2">
               <svg
