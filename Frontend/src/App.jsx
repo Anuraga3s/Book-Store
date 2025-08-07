@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./home/Home";
+import Home from "./Home/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Courses from "./courses/Courses";
 import Signup from "./components/Signup";
