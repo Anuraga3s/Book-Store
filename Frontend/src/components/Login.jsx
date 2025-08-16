@@ -40,7 +40,7 @@ function Login() {
     <div>
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
-          <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+          <form onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
