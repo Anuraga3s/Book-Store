@@ -64,9 +64,8 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium veritatis alias pariatur ad dolor repudiandae eligendi
-            corporis nulla non suscipit, iure neque earum?
+            Here are some book demos you can explore to get a quick glimpse before diving in fully. These demos let you preview selected chapters,
+            experience the author’s style, and discover whether the book aligns with your interests—making it easier to find your next great read.
           </p>
         </div>
 
