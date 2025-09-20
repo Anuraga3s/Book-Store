@@ -64,9 +64,7 @@ function Freebook() {
         <div>
           <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
           <p>
-             Start Reading Today — It’s Free!
-
-Still not sure? Explore our demo books and see the quality for yourself. Once you’re ready, log in to unlock your reading journey.
+             Start Reading Today — It’s Free! Still not sure? Explore our demo books and see the quality for yourself. Once you’re ready, log in to unlock your reading journey.
           </p>
         </div>
 
