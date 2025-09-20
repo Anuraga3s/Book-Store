@@ -1,19 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import banner from "../assets/banner.jpg";
+import { useNavigate } from "react-router-dom";
+
 function Banner() {
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+  const handleGetStarted = () => {
+    if (!email) {
+      alert("Please enter your email before continuing!");
+      return;
+    }
+
+    // ✅ Navigate to login page (keeping your existing login route working)
+    navigate("/login", { state: { email } });
+  };
+
   return (
     <>
-      <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
+        {/* Left Side - Text Section */}
         <div className="w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36">
           <div className="space-y-8">
             <h1 className="text-2xl md:text-4xl font-bold">
               Hello, welcome here to learn something{" "}
               <span className="text-pink-500">new everyday!!!</span>
             </h1>
-            <p className="text-sm md:text-xl">At BookShelf, we believe in the magic of books. Whether you're looking for
-  timeless classics, gripping thrillers, or insightful self-help guides,
-  we’re here to connect readers with stories that matter.
+            <p className="text-sm md:text-xl">
+              At BookShelf, we believe in the magic of books. Whether you're
+              looking for timeless classics, gripping thrillers, or insightful
+              self-help guides, we’re here to connect readers with stories that
+              matter.
             </p>
+
+            {/* Email Input */}
             <label className="input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -24,16 +44,28 @@ function Banner() {
                 <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
                 <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
               </svg>
-              <input type="text" className="grow" placeholder="Email" />
+              <input
+                type="text"
+                className="grow"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </label>
           </div>
-          <button className="btn mt-6 btn-secondary">Get Started</button>
+
+          {/* Get Started Button */}
+          <button onClick={handleGetStarted} className="btn mt-6 btn-secondary">
+            Get Started
+          </button>
         </div>
-        <div className=" order-1 w-full mt-20 md:w-1/2">
+
+        {/* Right Side - Image */}
+        <div className="order-1 w-full mt-20 md:w-1/2">
           <img
             src={banner}
             className="md:w-[550px] md:h-[460px] md:ml-12"
-            alt=""
+            alt="Books Banner"
           />
         </div>
       </div>
