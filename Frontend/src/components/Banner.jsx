@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import banner from "../assets/banner.jpg";
-import { useNavigate } from "react-router-dom";
 
 function Banner() {
   const [email, setEmail] = useState("");
-  const navigate = useNavigate();
 
   const handleGetStarted = () => {
     if (!email) {
@@ -12,8 +10,11 @@ function Banner() {
       return;
     }
 
-    // ✅ Navigate to login page (keeping your existing login route working)
-    navigate("/login", { state: { email } });
+    // ✅ Open the existing login modal
+    const modal = document.getElementById("my_modal_3");
+    if (modal) {
+      modal.showModal();
+    }
   };
 
   return (
