@@ -24,6 +24,7 @@ function Signup() {
 
     try {
       const res = await axios.post("http://localhost:4001/user/signup", userInfo);
+
       console.log("Signup Response:", res.data);
 
       if (res.data) {

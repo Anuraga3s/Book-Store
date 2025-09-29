@@ -16,16 +16,13 @@ const PORT =process.env.PORT || 4001
 const URI= process.env.MongoDBURI
 //connect to mongoDB
 
-try {
-    mongoose.connect(URI,{
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
-    console.log("Conncected to MONGODB")
+mongoose.connect(URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log("✅ Connected to MongoDB"))
+.catch((err) => console.error("❌ Error connecting to MongoDB:", err));
 
-} catch (error) {
-    console.log("Error",error)
-}
 //defining routes
 
 app.use("/book",bookRoute)
@@ -33,4 +30,4 @@ app.use("/user",userRoute)
 
 app.listen(PORT, () => {
   console.log(`Server is listening on Port : ${PORT}`)
-})
+});
