@@ -16,60 +16,39 @@ Password: demo123
 🛠 Tech Stack
 Frontend
 
-React + Vite
-Tailwind CSS
-DaisyUI
-React Router
-Axios
-React Hook Form
-React Hot Toast
+-React + Vite
+-Tailwind CSS
+-DaisyUI
+-React Router
+-Axios
+-React Hook Form
+-React Hot Toast
 
 Backend
 
 Node.js
-Express.js
-MongoDB + Mongoose
-bcryptjs
+-Express.js
+-MongoDB + Mongoose
+-bcryptjs
 
 Deployment
 
-Frontend → Vercel
-Backend → Render
-Database → MongoDB Atlas
+-Frontend → Vercel
+-Backend → Render
+-Database → MongoDB Atlas
 
 ⭐ Features
-🔓 User Authentication
 
-Signup & Login
-
-Password hashing with bcrypt
-
-Persistent session via LocalStorage
-
-📚 Book Browsing
-
-Clean book cards
-
-Category-based filtering
-
-Free book carousel with React Slick Slider
-
-Uniform card layout with responsive grid
-
-📖 Read Online
-
-Clicking "Read Now" opens the book’s online version in a new tab
-
-Each book stores a bookLink in the database
-
-🧪 Demo Login
-
-First-time users can try the platform without creating an account
-
-🌙 Dark Mode (optional if you implemented)
-
-Supports light/dark UI from DaisyUI
-
-📱 Fully Responsive
-
-Optimized for desktop, tablet & mobile
+-🔓 User Authentication
+-Signup & Login
+-Password hashing with bcrypt
+-Persistent session via LocalStorage
+-📚 Book Browsing
+-Clean book cards
+-Free book carousel with React Slick Slider
+-Uniform card layout with responsive grid
+-📖 Read Online
+-Clicking "Read Now" opens the book’s online version
+-Each book stores a bookLink in the database
+-Supports light/dark UI from DaisyUI
+-📱 Fully Responsive
