@@ -40,15 +40,27 @@ Deployment
 ⭐ Features
 
 -🔓 User Authentication
+
 -Signup & Login
+
 -Password hashing with bcrypt
+
 -Persistent session via LocalStorage
+
 -📚 Book Browsing
+
 -Clean book cards
+
 -Free book carousel with React Slick Slider
+
 -Uniform card layout with responsive grid
+
 -📖 Read Online
+
 -Clicking "Read Now" opens the book’s online version
+
 -Each book stores a bookLink in the database
+
 -Supports light/dark UI from DaisyUI
+
 -📱 Fully Responsive
