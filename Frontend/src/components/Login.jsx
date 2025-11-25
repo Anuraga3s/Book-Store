@@ -90,20 +90,31 @@ function Login() {
             </div>
 
             {/* Button */}
-            <div className="flex justify-around mt-6">
-              <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
-                Login
-              </button>
-              <p>
-                Not registered?{" "}
-                <Link
-                  to="/signup"
-                  className="underline text-blue-500 cursor-pointer"
-                >
-                  Signup
-                </Link>{" "}
-              </p>
-            </div>
+            {/* Buttons */}
+<div className="flex justify-between items-center mt-6">
+  <button className="bg-pink-500 text-white rounded-md px-4 py-2 hover:bg-pink-700 duration-200">
+    Login
+  </button>
+
+  <p className="text-sm">
+    Not registered?{" "}
+    <Link
+      to="/signup"
+      className="underline text-blue-500 cursor-pointer"
+    >
+      Signup
+    </Link>
+  </p>
+</div>
+
+{/* Demo Credentials */}
+<div className="mt-6 text-sm text-gray-400">
+  <p className="font-semibold">Try the website using demo login:</p>
+  <p><strong>Email:</strong> demo@bookshelf.com</p>
+  <p><strong>Password:</strong> demo123</p>
+</div>
+
+
           </form>
         </div>
       </dialog>
