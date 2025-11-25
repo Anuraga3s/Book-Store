@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Home/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Courses from "./components/Courses";
+import Courses from "./components/Course";
 
 import Signup from "./components/Signup";
 import { Toaster } from "react-hot-toast";
