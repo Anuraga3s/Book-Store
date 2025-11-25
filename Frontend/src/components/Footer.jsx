@@ -6,7 +6,7 @@ function Footer() {
       <hr />
       <footer className="footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white">
         <nav className="grid grid-flow-col gap-4">
-          <a className="link link-hover">About us</a>
+          {/*<a className="link link-hover">About us</a>*/}
           <div className="flex space-x-4">
   <a
     href="https://www.linkedin.com/in/anurag-choudhary-cse"
@@ -16,20 +16,20 @@ function Footer() {
   >
     LinkedIn
   </a>
-  <a
+  {/*<a
     href="https://www.instagram.com/your-username"
     target="_blank"
     rel="noopener noreferrer"
     className="link link-hover"
   >
     Instagram
-  </a>
+  </a>*/}
 </div>
 
           
-          <a className="link link-hover">Press kit</a>
+          
         </nav>
-        <nav>
+        {/* {<nav>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
@@ -65,7 +65,7 @@ function Footer() {
               </svg>
             </a>
           </div>
-        </nav>
+        </nav>} */}
         <aside>
           <p>Copyright © 2024 - All right reserved by Anurag Choudhary</p>
         </aside>

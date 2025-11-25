@@ -8,7 +8,7 @@ function Cards({ item }) {
 
           
           {/* FIXED IMAGE HEIGHT */}
-          <figure className="h-[200px] w-full overflow-hidden">
+          <figure className="h-[200px] w-full overflow-visible">
   <img
     src={item.image}
     alt="book"
