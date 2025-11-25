@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
 function Login() {
+  const API = import.meta.env.VITE_API_BASE_URL;
   const {
     register,
     handleSubmit,
@@ -11,12 +12,14 @@ function Login() {
   } = useForm();
 
   const onSubmit = async (data) => {
+    
+
     const userInfo = {
       email: data.email,
       password: data.password,
     };
-    await axios
-      .post("http://localhost:4001/user/login", userInfo)
+    
+    await axios.post(`${API}/user/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

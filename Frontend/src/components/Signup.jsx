@@ -6,6 +6,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 function Signup() {
+  const API = import.meta.env.VITE_API_BASE_URL;
   const location = useLocation();
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
@@ -22,8 +23,8 @@ function Signup() {
       password: data.password,
     };
 
-    try {
-      const res = await axios.post("http://localhost:4001/user/signup", userInfo);
+    try { 
+      const res = await axios .post(`${API}/user/signup`, userInfo)
 
       console.log("Signup Response:", res.data);
 
